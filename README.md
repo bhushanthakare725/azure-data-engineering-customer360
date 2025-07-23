@@ -40,3 +40,32 @@ azure-data-engineering-customer360/
 ├── adf_pipelines/         # ADF pipeline JSON export files
 ├── resources/             # Sample source CSV files
 └── README.md              # Project documentation
+```
+
+---
+
+## 🧠 Key Learnings
+
+- Created an end-to-end pipeline on Azure.
+- Implemented Medallion architecture (Bronze-Silver-Gold).
+- Built scalable PySpark transformations with Delta Lake.
+- Learned schema enforcement, versioning, and optimization using Delta features.
+- Hands-on with GitHub for version control of ADF pipelines and notebooks.
+
+---
+
+## 🚧 Project Status
+
+✅ Source CSVs loaded  
+✅ Bronze → Silver → Gold pipeline complete  
+✅ Delta features like schema evolution, time travel implemented  
+🔜 Power BI integration (Coming soon)  
+
+
+---
+
+## 📄 Disclaimer
+
+This project is for **educational and portfolio** purposes only. It does not include any proprietary or confidential information. All data used is sample-based and publicly shareable.
+
+---
