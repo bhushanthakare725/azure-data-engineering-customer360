@@ -1,55 +1,37 @@
 # 🚗 Customer 360 Data Platform – Azure Data Engineering Project
 
-## 📌 Project Overview
+## 🧾 Overview  
+This is a **self-initiated, lab-based simulation** of a real-time **Customer 360 Data Platform** for an automobile dealership network.  
+It’s built using end-to-end Azure technologies and designed to showcase enterprise-grade data pipeline skills.
 
-This project simulates a real-time **Customer 360 Data Platform** for an **automobile dealership network**, designed to showcase data engineering skills using **Azure technologies**. It follows an enterprise-style pipeline architecture built using:
-
-- Azure Data Factory (ADF)
-- Azure Data Lake Storage Gen2 (ADLS)
-- Databricks (PySpark)
-- Delta Lake
-- GitHub (Version Control)
-
-The goal is to integrate customer, vehicle, service, and finance data into a unified data platform enabling powerful business analytics and insights.
+### 🎯 Objective  
+Integrate customer, vehicle, service, and financial data to enable business insights such as vehicle ownership trends, service patterns, and segmentation for personalized marketing.
 
 ---
 
-## ⚙️ Tools & Technologies
+## 🛠 Tools & Technologies
 
-| Component | Technology Used |
-|----------|------------------|
-| Ingestion | Azure Data Factory |
-| Storage | Azure Data Lake Gen2 (Bronze, Silver, Gold layers) |
-| Transformation | Databricks (PySpark) |
-| Format | Delta Lake |
-| Version Control | GitHub |
-| Orchestration | ADF Pipelines & Triggers |
-
----
-
-## 🎯 Key Objectives
-
-- Build and manage data pipelines using ADF
-- Perform transformations with PySpark in Databricks
-- Implement **Bronze → Silver → Gold** architecture
-- Enable **schema evolution**, **partitioning**, **error handling**
-- Implement **SCD Type 1 / Type 2**, **window functions**, **time travel**
-- Practice **real-time project flow** and best practices
+| Component         | Technology & Purpose                                  |
+|------------------|-------------------------------------------------------|
+| Orchestration    | Azure Data Factory — pipelines and scheduling         |
+| Data Storage     | ADLS Gen2 — Bronze, Silver, Gold Delta Lake layers    |
+| Compute          | Databricks CE with PySpark — data transformations     |
+| Table Format     | Delta Lake — schema enforcement & time travel         |
+| Version Control  | GitHub — notebooks, pipeline JSON, and documentation  |
+| Monitoring       | ADF Monitoring + Delta History                        |
 
 ---
 
-## 🔍 Real-World Relevance
+## 🗂 Project Structure
 
-Though this is a **self-initiated lab project**, it is based on actual architecture patterns used by enterprises.  
-This project is created to **demonstrate real-time Azure Data Engineering capabilities** for interviews and portfolio.
-
----
-
-## 📂 Project Structure
-
-```bash
-project/
+```text
+azure-data-engineering-customer360/
 │
-├── Bronze_Layer/        # Raw data from CSVs to Delta tables
-├── Silver_Layer/        # Cleaned & Joined Delta tables
-├── Gold_Layer/          # Aggregated_
+├── Bronze_Layer/              # Raw ingestion outputs (Delta)
+├── Silver_Layer/              # Cleaned/joined Delta tables
+├── Gold_Layer/                # Aggregated business outputs
+├── Notebooks/                 # PySpark notebooks for transformation
+├── ADF_Pipelines/             # Exported ADF pipeline JSON files
+├── datasets/                  # Sample CSV datasets
+├── Interview_QA/              # Q&A markdown files for practice
+└── README.md                  # Project documentation
